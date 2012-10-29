@@ -1,10 +1,11 @@
 defaults: &defaults
   issue_editing_enabled: true
   front_page_search_enabled: true
+  statsd_host: localhost
+  statsd_port: 8125
 
 development:
   <<: *defaults
-  front_page_search: false
 
 test:
   <<: *defaults
